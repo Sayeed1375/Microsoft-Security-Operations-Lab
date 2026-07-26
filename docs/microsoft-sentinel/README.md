@@ -35,7 +35,7 @@ A Log Analytics Workspace was created to collect, store, and analyse security lo
 
 ### Screenshot
 
-![Create Log Analytics Workspace](Screenshots/Sentinel/01-create-log-analytics-workspace.png.png)
+![Create Log Analytics Workspace](../../Screenshots/Sentinel/01-create-log-analytics-workspace.png.png)
 
 ---
 
