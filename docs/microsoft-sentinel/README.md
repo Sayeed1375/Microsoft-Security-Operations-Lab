@@ -16,6 +16,31 @@ As part of my Microsoft Security Operations (SOC) Home Lab, I deployed Microsoft
 - Build the foundation for threat hunting and incident response
 
 ---
+## Deployment Workflow
+text
+Azure Subscription
+        │
+        ▼
+Resource Group
+        │
+        ▼
+Log Analytics Workspace
+        │
+        ▼
+Microsoft Sentinel
+        │
+        ▼
+Data Connectors
+        │
+        ▼
+Analytics Rules
+        │
+        ▼
+Incidents
+        │
+        ▼
+Threat Hunting
+
 
 ## Environment
 
