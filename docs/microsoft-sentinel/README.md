@@ -17,7 +17,6 @@ As part of my Microsoft Security Operations (SOC) Home Lab, I deployed Microsoft
 
 ---
 ## Deployment Workflow
-text
 Azure Subscription
         │
         ▼
@@ -40,6 +39,10 @@ Incidents
         │
         ▼
 Threat Hunting
+
+## Architecture
+
+> Architecture diagram will be added as the Microsoft Security Operations Home Lab progresses.
 
 
 ## Environment
@@ -105,28 +108,15 @@ After activation, the platform provides capabilities including:
 
 # Outcome
 
-The deployment successfully established the core SIEM platform for the SOC Home Lab.
+The Microsoft Sentinel deployment was successfully completed using an Azure Log Analytics Workspace.
 
-The environment is now prepared for:
+The environment now serves as the centralized SIEM platform for my Microsoft Security Operations Home Lab and is ready for:
 
 - Microsoft Defender XDR integration
-- Microsoft Entra ID logs
-- Data Connectors
-- Analytics Rules
-- Threat Hunting
-- Incident Investigation
-- Automation Rules
-- KQL Queries
-
----
-
-# Skills Demonstrated
-
-- Microsoft Sentinel Deployment
-- Azure Log Analytics
-- Azure Resource Management
-- Security Monitoring
-- SIEM Configuration
-- Cloud Security
-- Microsoft Azure
-- SC-200 Security Operations
+- Microsoft Entra ID log collection
+- Microsoft 365 security data connectors
+- Custom Analytics Rules
+- Incident investigation
+- Threat Hunting with KQL
+- Automation Rules and Playbooks
+- SOC dashboards using Workbooks
