@@ -45,7 +45,7 @@ Azure validated the deployment configuration before creating the Log Analytics W
 
 ### Screenshot
 
-![Review Configuration](../../Screenshots/Sentinel/02-review-and-create.png)
+![Review Configuration](../../Screenshots/Sentinel/02-review-and-create.png.png)
 
 ---
 
@@ -55,7 +55,7 @@ The Log Analytics Workspace deployment completed successfully. The workspace is 
 
 ### Screenshot
 
-![Deployment Complete](../../Screenshots/Sentinel/03-deployment-complete.png)
+![Deployment Complete](../../Screenshots/Sentinel/03-deployment-complete.png.png)
 
 ---
 
@@ -74,7 +74,7 @@ After activation, the platform provides capabilities including:
 
 ### Screenshot
 
-![Sentinel Activated](../../Screenshots/Sentinel/04-microsoft-sentinel-activated.png)
+![Sentinel Activated](../../Screenshots/Sentinel/04-microsoft-sentinel-activated.png.png)
 
 ---
 
