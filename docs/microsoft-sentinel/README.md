@@ -17,6 +17,8 @@ As part of my Microsoft Security Operations (SOC) Home Lab, I deployed Microsoft
 
 ---
 ## Deployment Workflow
+
+```text
 Azure Subscription
         │
         ▼
@@ -39,7 +41,7 @@ Incidents
         │
         ▼
 Threat Hunting
-
+```
 ## Architecture
 
 > Architecture diagram will be added as the Microsoft Security Operations Home Lab progresses.
