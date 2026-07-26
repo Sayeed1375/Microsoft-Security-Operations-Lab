@@ -120,3 +120,31 @@ The environment now serves as the centralized SIEM platform for my Microsoft Sec
 - Threat Hunting with KQL
 - Automation Rules and Playbooks
 - SOC dashboards using Workbooks
+
+
+## Next Steps
+
+The next phase of the project includes:
+
+- Configure Microsoft Defender XDR Data Connector
+- Connect Microsoft Entra ID logs
+- Enable Microsoft Defender for Endpoint integration
+- Create Analytics Rules
+- Generate test alerts
+- Investigate incidents
+- Perform Threat Hunting using KQL
+- Build Microsoft Sentinel Workbooks
+
+## Skills Demonstrated
+
+- Microsoft Sentinel Deployment
+- Azure Log Analytics Workspace
+- Azure Resource Management
+- Microsoft Azure Administration
+- SIEM Deployment
+- Cloud Security Monitoring
+- Security Operations (SOC)
+- Security Monitoring
+- Incident Management
+- Threat Hunting Preparation
+- SC-200 Microsoft Security Operations
