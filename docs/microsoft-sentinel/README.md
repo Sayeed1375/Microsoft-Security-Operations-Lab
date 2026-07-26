@@ -1,3 +1,11 @@
+![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4?logo=microsoftazure&logoColor=white)
+
+![Microsoft Sentinel](https://img.shields.io/badge/Microsoft-Sentinel-5E5E5E)
+
+![SC-200](https://img.shields.io/badge/Certification-SC--200-blue)
+
+![KQL](https://img.shields.io/badge/KQL-Kusto-green)
+
 # Microsoft Sentinel Deployment
 
 ## Overview
