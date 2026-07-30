@@ -16,7 +16,7 @@ This repository documents how I configured a streaming diagnostic pipeline, conn
 ### Step 1: Discovering the Ingestion Gap
 Initially, when I attempted to run advanced hunting queries or build widgets against identity logs, the workspace yielded zero entries. The tables were completely unpopulated because no active log routing policy was established out of the box.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/1 Empty Workbook Query Window.png'" width="100%" alt="Empty Workbook Query Window">
+![Empty Workbook Query Window](../../Screenshots/Sentinel/01-empty-workbook-query-window.png)
 
 ---
 
@@ -25,14 +25,14 @@ To fix this, I instructed Microsoft Entra ID to broadcast its platform telemetry
 1. I navigated to the **Microsoft Entra Admin Center** > **Identity** > **Monitoring & health** > **Diagnostic settings**.
 2. I clicked **Add diagnostic setting**.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/2 Unconfigured Diagnostic Settings.png'" width="100%" alt="Unconfigured Diagnostic Settings">
+![Unconfigured Diagnostic Settings](../../Screenshots/Sentinel/02-unconfigured-diagnostic-settings.png)
 
 3. I named my configuration policy `Entra-to-loganalytic`.
 4. Under **Logs**, I selected the core monitoring categories I wanted to capture: `SignInLogs` and `AuditLogs`.
 5. Under **Destination details**, I checked **Send to Log Analytics workspace**.
 6. I linked it to my subscription and saved the policy.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/6 Active Diagnostic Setting Policy.png'" width="100%" alt="Active Diagnostic Setting Policy">
+![Active Diagnostic Setting Policy](../../Screenshots/Sentinel/06-active-diagnostic-setting-policy.png)
 
 ---
 
@@ -41,12 +41,12 @@ Next, I needed to make sure Microsoft Sentinel was fully trained to recognize an
 1. I opened the **Microsoft Defender / Sentinel Portal**, went to **Content management**, and opened the **Content hub**.
 2. I searched for the official **Microsoft Entra ID** solution pack and clicked **Install**.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/3 Finding the Microsoft Entra ID Solution.png'" width="100%" alt="Finding the Microsoft Entra ID Solution">
+![Finding the Microsoft Entra ID Solution](../../Screenshots/Sentinel/03-finding-the-microsoft-entra-id-solution.png)
 
 3. I monitored the deployment sidebar until the system completely provisioned the underlying infrastructure.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/4 Installation Progress Bar.png'" width="100%" alt="Installation Progress Bar">
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/5 Installation Success Notification.png'" width="100%" alt="Installation Success Notification">
+![Installation Progress Bar](../../Screenshots/Sentinel/04-installation-progress-bar.png)
+![Installation Success Notification](../../Screenshots/Sentinel/05-installation-success-notification.png)
 
 ---
 
@@ -54,13 +54,13 @@ Next, I needed to make sure Microsoft Sentinel was fully trained to recognize an
 With the package successfully deployed, I had to explicitly turn on the data connector page to map the incoming log logs to the Sentinel database schema.
 1. I went to **Configuration** > **Data connectors** and selected **Microsoft Entra ID**.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/7 Sentinel Data Connectors Menu.png'" width="100%" alt="Sentinel Data Connectors Menu">
+![Sentinel Data Connectors Menu](../../Screenshots/Sentinel/07-sentinel-data-connectors-menu.png)
 
 2. I clicked **Open connector page**.
 3. Under the configuration panel, I checked the boxes for **Sign-In Logs** and **Audit Logs**, along with advanced telemetry like `User Risk Events` and `Risky Users`.
 4. I clicked **Apply Changes**.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/8 Enabling Entra Log Types.png'" width="100%" alt="Enabling Entra Log Types">
+![Enabling Entra Log Types](../../Screenshots/Sentinel/08-enabling-entra-log-types.png)
 
 ---
 
@@ -78,7 +78,7 @@ To verify that my data pipeline was successfully flowing into Sentinel:
 
 The database successfully returned live telemetry rows detailing my authentication time, application name, resource IDs, and public IP address.
 
-<img src="https://github.com" onerror="this.src='Screenshots/Sentinel/9 Successful KQL Query Log Results.png'" width="100%" alt="Successful KQL Query Log Results">
+![Successful KQL Query Log Results](../../Screenshots/Sentinel/09-successful-kql-query-log-results.png)
 
 ---
 
@@ -96,7 +96,7 @@ Instead of using a generic pre-made layout, I wanted to build my own visual moni
 
 My custom workbook dashboard updated automatically, giving my home SOC lab a visual, real-time breakdown of identity actions.
 
-
+![Populated Identity Dashboard Workbook](../../Screenshots/Sentinel/10-populated-identity-dashboard-workbook.png)
 
 ---
 
