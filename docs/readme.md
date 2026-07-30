@@ -1,8 +1,8 @@
-![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4?logo=microsoftazure&logoColor=white)
-![Microsoft Sentinel](https://img.shields.io/badge/Microsoft-Sentinel-5E5E5E)
+![Azure](https://shields.io)
+![Microsoft Sentinel](https://shields.io)
 ![Microsoft Entra](https://shields.io)
-![KQL](https://img.shields.io/badge/KQL-Kusto-green)
-![SC-200](https://img.shields.io/badge/Certification-SC--200-blue)
+![KQL](https://shields.io)
+![SC-200](https://shields.io)
 
 # Microsoft Entra ID Log Ingestion & Custom Workbook Dashboard
 
@@ -67,7 +67,7 @@ Initially, executing advanced hunting scripts or reviewing workbook templates ag
 
 ### Screenshot
 
-![Empty Workbook Query Window](../../Screenshots/Sentinel/01-create-log-analytics-workspace.png.png)
+<img src="Screenshots/Sentinel/1 Empty Workbook Query Window.png" width="100%" alt="Empty Workbook Query Window">
 
 ---
 
@@ -80,7 +80,7 @@ To bridge this data visibility gap, a diagnostic streaming rule was created with
 
 ### Screenshot
 
-![Unconfigured Diagnostic Settings](../../Screenshots/Sentinel/2 Unconfigured Diagnostic Settings.png.png)
+<img src="Screenshots/Sentinel/2 Unconfigured Diagnostic Settings.png" width="100%" alt="Unconfigured Diagnostic Settings">
 
 3. Provided a descriptive policy tracking name: `Entra-to-loganalytic`.
 4. Checked the vital monitoring category logs: `SignInLogs` and `AuditLogs`.
@@ -88,7 +88,7 @@ To bridge this data visibility gap, a diagnostic streaming rule was created with
 
 ### Screenshot
 
-![Active Diagnostic Setting Policy](../../Screenshots/Sentinel/6 Active Diagnostic Setting Policy.png.png)
+<img src="Screenshots/Sentinel/6 Active Diagnostic Setting Policy.png" width="100%" alt="Active Diagnostic Setting Policy">
 
 ---
 
@@ -102,15 +102,15 @@ Microsoft Sentinel must be trained to parse and classify incoming Entra ID ident
 
 ### Screenshot
 
-![Finding the Microsoft Entra ID Solution](../../Screenshots/Sentinel/3 Finding the Microsoft Entra ID Solution.png.png)
+<img src="Screenshots/Sentinel/3 Finding the Microsoft Entra ID Solution.png" width="100%" alt="Finding the Microsoft Entra ID Solution">
 
 4. Monitored the automation window until deployment configurations completely finished building.
 
 ### Screenshots
 
-![Installation Progress Bar](../../Screenshots/Sentinel/4 Installation Progress Bar.png.png)
+<img src="Screenshots/Sentinel/4 Installation Progress Bar.png" width="100%" alt="Installation Progress Bar">
 
-![Installation Success Notification](../../Screenshots/Sentinel/5 Installation Success Notification.png.png)
+<img src="Screenshots/Sentinel/5 Installation Success Notification.png" width="100%" alt="Installation Success Notification">
 
 ---
 
@@ -122,14 +122,14 @@ With the solution components properly compiled, the specific logs were activated
 
 ### Screenshot
 
-![Sentinel Data Connectors Menu](../../Screenshots/Sentinel/7 Sentinel Data Connectors Menu.png.png)
+<img src="Screenshots/Sentinel/7 Sentinel Data Connectors Menu.png" width="100%" alt="Sentinel Data Connectors Menu">
 
 2. Launched the **Open connector page** pane.
 3. Enabled collection rules for **Sign-In Logs**, **Audit Logs**, **User Risk Events**, and **Risky Users**, then applied changes.
 
 ### Screenshot
 
-![Enabling Entra Log Types](../../Screenshots/Sentinel/8 Enabling Entra Log Types.png.png)
+<img src="Screenshots/Sentinel/8 Enabling Entra Log Types.png" width="100%" alt="Enabling Entra Log Types">
 
 ---
 
@@ -151,7 +151,7 @@ The workspace successfully populated rows displaying precise event times, logged
 
 ### Screenshot
 
-![Successful KQL Query Log Results](../../Screenshots/Sentinel/9 Successful KQL Query Log Results.png.png)
+<img src="Screenshots/Sentinel/9 Successful KQL Query Log Results.png" width="100%" alt="Successful KQL Query Log Results">
 
 ---
 
@@ -172,33 +172,11 @@ SigninLogs
 
 ### Screenshot
 
-![Populated Identity Dashboard Workbook](../../Screenshots/Sentinel/10 Populated Identity Dashboard Workbook.png.png)
+
 
 ---
 
-# Outcome
-
-The Microsoft Entra ID data integration and visual dashboard deployment were executed successfully. The workspace actively records critical access events across the domain, enabling:
-
-- Visualization of identity log peaks via custom workspace dashboards
-- Granular tracking of user sign-in parameters and geographic IP anomalies
-- Preparation for multi-tier authentication abuse threat hunting scenarios
-- Auditing of tenant directory modifications and administrative roles
-
-## Next Steps
-
-The next phase of the project includes:
-
-- Constructing a scheduled Analytics Rule to flag potential credential stuffing attacks
-- Simulating persistent malicious brute-force authentication streams via an external test client
-- Plotting real-time sign-in traffic locations across an interactive geographic world map widget
-
-## Skills Demonstrated
-
-- Identity Telemetry Pipeline Ingestion
-- Advanced KQL Query Engineering
-- Custom Microsoft Sentinel Workbook Construction
-- Data Transformation & Dashboard Visualization
-- Cloud SIEM Directory Optimization
-- Infrastructure Integration (Entra ID to Log Analytics)
-- SC-200 Certification Blueprint Practical Application
+## 🎯 Key Takeaways & Lab Lessons
+* **Ingestion Delay:** Brand-new diagnostic pipelines can take anywhere from **15 to 45 minutes** to spin up across the Microsoft cloud architecture before logs populate the schema.
+* **Forward-Looking Only:** Diagnostic configurations do not capture history retroactively. They only monitor events starting from the exact minute the configuration policy is saved.
+* **KQL Mode Matters:** Switching the log query window from Simple mode to KQL mode gives you complete query control to hunt, analyze, and build custom visual steps.
