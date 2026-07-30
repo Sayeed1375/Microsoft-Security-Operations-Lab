@@ -15,6 +15,7 @@ This repository documents how I configured a streaming diagnostic pipeline, conn
 
 ### Step 1: Discovering the Ingestion Gap
 Initially, when I attempted to run advanced hunting queries or build widgets against identity logs, the workspace yielded zero entries. The tables were completely unpopulated because no active log routing policy was established out of the box.
+![Sentinel Activated](../../Screenshots/Sentinel/04-microsoft-sentinel-activated.png.png)
 
 ![Empty Workbook Query Window](../../Screenshots/Sentinel/01-empty-workbook-query-window.png.png)
 
