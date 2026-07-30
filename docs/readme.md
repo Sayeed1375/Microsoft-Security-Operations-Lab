@@ -67,7 +67,7 @@ Initially, executing advanced hunting scripts or reviewing workbook templates ag
 
 ### Screenshot
 
-![Empty Workbook Query Window](../../Screenshots/Sentinel/1 Empty Workbook Query Window.png)
+![Empty Workbook Query Window](../../Screenshots/Sentinel/01-create-log-analytics-workspace.png.png)
 
 ---
 
