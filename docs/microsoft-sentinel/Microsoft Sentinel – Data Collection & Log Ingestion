@@ -1,0 +1,144 @@
+# Microsoft Sentinel – Data Collection & Log Ingestion
+
+This section documents the hands-on implementation of Microsoft Sentinel data collection and log ingestion performed in my Microsoft Security Operations (SOC) Home Lab. The objective was to build a centralized SIEM environment by integrating multiple security data sources, normalizing telemetry, and preparing the workspace for threat detection, incident investigation, and threat hunting.
+
+---
+
+## 📌 Identify Data Sources to be Ingested for Microsoft Sentinel
+
+Identified and evaluated the security data sources required for effective monitoring in Microsoft Sentinel. Planned data ingestion from Microsoft Azure, Microsoft Entra ID, Windows endpoints, Linux servers, Microsoft 365 services, and third-party security solutions to provide complete visibility across the environment.
+
+**Key Learning**
+- Evaluated supported Microsoft Sentinel data connectors
+- Planned centralized log collection architecture
+- Understood log source prioritization for SOC operations
+- Prepared data sources for security monitoring and incident response
+
+---
+
+## 📦 Implement and Use Content Hub Solutions
+
+Explored Microsoft Sentinel Content Hub and deployed built-in solutions to accelerate SIEM deployment. Installed data connectors, analytics rules, hunting queries, workbooks, watchlists, and automation components to extend Sentinel functionality.
+
+**Key Learning**
+- Installed Content Hub solutions
+- Deployed analytics rule templates
+- Imported hunting queries and workbooks
+- Enabled rapid deployment using Microsoft solutions
+
+---
+
+## 🔍 Kusto Query Language (KQL)
+
+Learned the fundamentals of Kusto Query Language (KQL) to search, filter, correlate, summarize, and investigate security events stored within Log Analytics Workspace. Practiced writing queries for threat hunting and log analysis.
+
+**Key Learning**
+- Filtering and searching logs
+- Sorting and summarizing data
+- Working with operators and functions
+- Preparing queries for threat hunting
+
+---
+
+## ☁️ Configure Microsoft Connectors for Azure
+
+Configured Azure data connectors to ingest Azure Activity Logs, Azure Policy events, and Diagnostic Logs into Microsoft Sentinel. Verified successful log ingestion and monitored Azure resource activities.
+
+**Key Learning**
+- Connected Azure subscriptions
+- Enabled Azure Activity Logs
+- Configured Diagnostic Settings
+- Integrated Azure Policy logs
+
+---
+
+## ⚙️ Plan and Configure Azure Monitor Agent (AMA) & Data Collection Rules (DCR)
+
+Deployed Azure Monitor Agent (AMA) and created Data Collection Rules (DCRs) to define how logs are collected from Azure and hybrid resources. Learned how AMA replaces the legacy Log Analytics Agent for modern data collection.
+
+**Key Learning**
+- Installed Azure Monitor Agent
+- Created Data Collection Rules
+- Assigned DCRs to Azure resources
+- Optimized telemetry collection
+
+---
+
+## 🖥️ Configure Syslog & Common Event Format (CEF)
+
+Configured Syslog and Common Event Format (CEF) event collection to ingest logs from Linux servers, firewalls, IDS/IPS devices, and other network appliances into Microsoft Sentinel.
+
+**Key Learning**
+- Configured Syslog connectors
+- Integrated CEF-compatible devices
+- Forwarded Linux security events
+- Centralized third-party security logs
+
+---
+
+## 🪟 Collect Windows Security Events & Windows Event Forwarding (WEF)
+
+Configured Windows Security Event collection using Windows Event Forwarding (WEF) to centralize endpoint logs for monitoring, incident investigation, and threat detection.
+
+**Key Learning**
+- Enabled Windows Security Events
+- Configured Windows Event Forwarding
+- Collected authentication and system logs
+- Verified endpoint telemetry ingestion
+
+---
+
+## 📋 Create Custom Log Tables
+
+Created custom log tables within Log Analytics Workspace to ingest application logs and other custom data sources that are not supported by default connectors.
+
+**Key Learning**
+- Created custom tables
+- Imported custom log data
+- Structured log schemas
+- Queried custom datasets using KQL
+
+---
+
+## 🔐 Configure Sentinel to Ingest Azure & Microsoft Entra ID Data
+
+Integrated Microsoft Azure and Microsoft Entra ID with Microsoft Sentinel to monitor authentication events, administrative activities, sign-in logs, audit logs, and cloud resource operations.
+
+**Key Learning**
+- Connected Microsoft Entra ID
+- Collected Sign-in Logs
+- Collected Audit Logs
+- Monitored Azure resource activities
+
+---
+
+## 📊 Monitor & Optimize Data Ingestion
+
+Monitored data connector health, validated successful log ingestion, and optimized data collection strategies to improve performance, reduce unnecessary log volume, and manage Log Analytics costs.
+
+**Key Learning**
+- Validated connector status
+- Monitored ingestion health
+- Optimized log collection
+- Reduced unnecessary data ingestion
+- Improved SIEM performance
+
+---
+
+## 🛠️ Technologies & Services Used
+
+- Microsoft Sentinel
+- Azure Log Analytics Workspace
+- Azure Monitor Agent (AMA)
+- Data Collection Rules (DCR)
+- Kusto Query Language (KQL)
+- Microsoft Entra ID
+- Azure Activity Logs
+- Azure Policy
+- Diagnostic Settings
+- Syslog
+- Common Event Format (CEF)
+- Windows Event Forwarding (WEF)
+- Log Analytics
+- Data Connectors
+- Content Hub
